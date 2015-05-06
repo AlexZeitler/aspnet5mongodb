@@ -1,0 +1,37 @@
+{
+  "webroot": "wwwroot",
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "AutoMapper":"4.0.0-ci1020",
+    "Kestrel": "1.0.0-beta4",
+    "Microsoft.AspNet.Mvc": "6.0.0-beta4",
+    "Microsoft.AspNet.Server.IIS": "1.0.0-beta4",
+    "Microsoft.AspNet.Server.WebListener": "1.0.0-beta4",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-beta4",
+    "Microsoft.Framework.ConfigurationModel.Json" : "1.0.0-beta4",
+    "MongoDb.Driver" : "2.0.0"
+  },
+
+  "commands": {
+    "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
+    "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5004"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  },
+
+  "exclude": [
+    "wwwroot",
+    "node_modules",
+    "bower_components"
+  ],
+  "publishExclude": [
+    "node_modules",
+    "bower_components",
+    "**.xproj",
+    "**.user",
+    "**.vspscc"
+  ]
+}
