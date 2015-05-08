@@ -76,6 +76,7 @@ namespace AspNet5MongoDb
             AutoMapperConfiguration.Configure();
 
             Console.WriteLine("Server is running. Press ENTER to stop it.");
+            Console.WriteLine("Hallo von der dotnet cologne 2015");
         }
     }
 }
