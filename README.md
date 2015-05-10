@@ -1,6 +1,6 @@
 # aspnet5mongodb
 
-This repository contains the files for my talk about the deployment of ASP.NET 5 using Docker at dotnet cologne 2015 ([Slides](http://slides.com/alexzeitler/deck/live#/)).
+This repository contains the files for my talk about the deployment of [ASP.NET 5](https://github.com/aspnet/home) using Docker at [dotnet cologne](http://dotnet-cologne.de/) 2015 ([Slides](http://slides.com/alexzeitler/deck/live#/)).
 
 The commands you need to link the MongoDb container with the application container are as follows:
 
