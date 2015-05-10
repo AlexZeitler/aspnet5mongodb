@@ -12,8 +12,8 @@ docker run -v "$(pwd)":/data --name mongo -d mongo mongod --smallfiles
 
 ``` 
 # build an Docker image for our application
-sudo docker build -t mvc6mongo .
-sudo docker run -t -d --link mongo:mongo --name aspnet5mongodbapp -p 80:5004 mvc6mongo
+docker build -t mvc6mongo .
+docker run -t -d --link mongo:mongo --name aspnet5mongodbapp -p 80:5004 mvc6mongo
 ```
 
 You should now be able to call ```http://localhost/api/speakers``` on your host.
